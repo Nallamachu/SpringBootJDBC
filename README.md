@@ -45,3 +45,14 @@ My POM.XML Dependencies are look like,
   <scope>test</scope>
 </dependency>
 ```
+My application.properties look like below,
+```
+#Tomcat port changed from 8080 to 1234
+server.port= 1234
+
+# Here 'test' is the database name
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=TEMP
+spring.datasource.username=sa
+spring.datasource.password=sa
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+```
